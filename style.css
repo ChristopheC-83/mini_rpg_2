@@ -1,0 +1,152 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+  background: linear-gradient(
+    37deg,
+    rgba(172, 70, 255, 1) 0%,
+    rgba(255, 31, 31, 1) 100%
+  );
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.content {
+  flex-grow: 1;
+  margin: 80px auto;
+}
+
+.frame {
+  width: 800px;
+  min-height: 600px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  background: linear-gradient(
+    227deg,
+    rgba(255, 216, 70, 1) 0%,
+    rgba(189, 117, 0, 1) 100%
+  );
+
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.cadreJoueur {
+  width: 250px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.cadreInfo {
+  width: 350px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+img {
+  display: block;
+  width: 80%;
+  height: 150px;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.cadreInfoJoueur {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.atk {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+.atk:hover {
+  background-color: rgb(189, 19, 19);
+}
+.potion {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: bold;
+  cursor: pointer;
+}
+.potion:hover {
+  background-color: rgb(4, 92, 4);
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.infoAction,
+.infoGeneral {
+  width: 90%;
+  height: 40%;
+  /* border: 1px solid gray; */
+  margin: 20px auto;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.infoGeneral {
+  font-size: 30px;
+  line-height: 40px;
+  color: red;
+  font-weight: bold;
+}
+
+.reset {
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+  font-weight: bold;
+  border: 3px solid gray;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.33s;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: white;
+  color: blue;
+}
+
+.disable {
+  cursor: none;
+  background-color: gray;
+  pointer-events: none;
+}

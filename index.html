@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mini RPG</title>
+  </head>
+  <body>
+    <header><h1>Mini RPG POO 2</h1></header>
+
+    <div class="content">
+      <div class="frame">
+        <div class="cadreJoueur1 cadreJoueur">
+          <img src="./images/nobody.png" alt="" id="imageJoueur1"/>
+          <div class="cadreInfoJoueur">
+            <div id="nomJoueur1" class="nom"></div>
+            <p>PV / PV MAX</p>
+            <div id="pvJoueur1" class="pv"></div>
+            <p>Attaque</p>
+            <div id="forceJoueur1" class="force"></div>
+            <p>Nombre de Potions</p>
+            <div id="potionsJoueur1" class="potions"></div>
+          </div>
+          <div class="action actionJoueur1">
+            <div class="atk" id="atkJoueur1">Attaque</div>
+            <div class="potion" id="soinJoueur1">Se Soigner</div>
+          </div>
+        </div>
+
+
+        <div class="cadreInfo">
+          <div class="infoAction"></div>
+
+          <div class="infoGeneral"></div>
+
+          <div class="reset">Reset</div>
+
+
+        </div>
+
+
+
+
+        <div class="cadreJoueur2 cadreJoueur">
+          <img src="./images/nobody.png" alt="" id="imageJoueur2" />
+          <div class="cadreInfoJoueur">
+            <div id="nomJoueur2" class="nom"></div>
+            <p>PV / PV MAX</p>
+            <div id="pvJoueur2" class="pv"></div>
+            <p>Attaque</p>
+            <div id="forceJoueur2" class="force"></div>
+            <p>Nombre de Potions</p>
+            <div id="potionsJoueur2" class="potions"></div>
+          </div>
+          <div class="action actionJoueur2">
+            <div class="atk disable" id="atkJoueur2">Attaque</div>
+            <div class="potion disable" id="soinJoueur2">Se Soigner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer><h3>Test by Kikisan</h3></footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
